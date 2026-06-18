@@ -1,6 +1,6 @@
 # Field Feed
 
-Keeps track of a fields value and who changed it along with a note
+Keeps track of a fields value and use hooks to set actions when a field change from something to something else.
 
 ## Requirements
 
