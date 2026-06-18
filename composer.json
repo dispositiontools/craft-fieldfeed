@@ -1,0 +1,50 @@
+{
+    "name": "dispositiontools/craft-fieldfeed",
+    "description": "Keeps track of a fields value and who changed it along with a note",
+    "type": "craft-plugin",
+    "version" : "0.0.1",
+    "license": "proprietary",
+    "support": {
+        "email": "support@disposition.tools",
+        "issues": "https://github.com/dispositiontools/craft-fieldfeed/issues?state=open",
+        "source": "https://github.com/dispositiontools/craft-fieldfeed",
+        "docs": "https://github.com/dispositiontools/craft-fieldfeed",
+        "rss": "https://github.com/dispositiontools/craft-fieldfeed/releases.atom"
+    },
+    "require": {
+        "php": ">=8.0.2",
+        "craftcms/cms": "^4.12.0"
+    },
+    "require-dev": {
+        "craftcms/ecs": "dev-main",
+        "craftcms/phpstan": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "dispositiontools\\fieldfeed\\": "src/"
+        }
+    },
+    "extra": {
+        "handle": "field-feed",
+        "name": "Field Feed",
+        "developer": "Disposition Tools",
+        "documentationUrl": "https://github.com/dispositiontools/craft-fieldfeed",
+        "class": "dispositiontools\\fieldfeed\\FieldFeed"
+    },
+    "scripts": {
+        "check-cs": "ecs check --ansi",
+        "fix-cs": "ecs check --ansi --fix",
+        "phpstan": "phpstan --memory-limit=1G"
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "8.0.2"
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
+        }
+    }
+}
+
